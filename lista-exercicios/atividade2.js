@@ -7,8 +7,13 @@ const prompt = require('prompt-sync')();
 let eleitores = Number(prompt("Digite o número total de eleitores"));
 let brancos = Number(prompt("Quantos voto foram brancos?"));
 let nulos = Number(prompt("Quantos votos foram nulos?"));
-
+let validos = Number(prompt('Quantos votos em válidos houveram ? '));
 //Entregue as informações solicitadas
 
+if ((brancos + nulos + validos ) != eleitores){
+    console.log('inválido pois o número de votos inseridos não é igual ao número de eleitores');
+}else{
+    console.log('Votos brancos percentual: '+(n2/n)*100+'%','Votos nulos percentual: '+(n3/n)*100+'%','Votos válidos percentual: '+(n4/n)*100+'%');
+}
 
 
